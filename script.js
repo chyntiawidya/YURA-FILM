@@ -1,7 +1,7 @@
 function ambilData() {
     $("#movie-list").html(`<img src="loading.gif">`)
 $.ajax({
-    url : "http://omdbapi.com",
+    url : "https://omdbapi.com",
     type : "get",
     dataType : "json",
 
@@ -61,7 +61,7 @@ $("#movie-list").on("click",".see-detail",function(){
         let id = $(this).data('id');
 
     $.ajax({
-    url : "http://omdbapi.com",
+    url : "https://omdbapi.com",
     type : "get",
     dataType : "json",
 
